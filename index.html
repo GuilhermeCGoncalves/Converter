@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <section class="converter">
+        <div class="header" id="pressure-header">Pressão</div>
+        <input type="number" class="input" id="pressure-input" oninput="pressureConverter()">
+        <div class="units" id="pressure-units">
+            <div id="mBar" onclick="changeUnit(id)">mBar</div>
+            <div id ="Bar" onclick="changeUnit(id)">Bar</div>
+            <div id="Pa" onclick="changeUnit(id)">Pa</div>
+            <div style="background-color:#001f4d;"id="kPa" onclick="changeUnit(id)">kPa</div>
+            <div id="MPa" onclick="changeUnit(id)">MPa</div>
+            <div id="psi" onclick="changeUnit(id)">psi</div>
+            <div id="torr" onclick="changeUnit(id)">torr</div>
+        </div>
+       
+        <section class="output" id="pressure-output">
+            <div id="output-mBar">mBar</div>
+            <div id="output-Bar">Bar</div>
+            <div id="output-Pa">Pa</div>
+            <div id="output-kPa">kPa</div>
+            <div id="output-MPa">MPa</div>
+            <div id="output-psi">psi</div>
+            <div id="output-torr">torr</div>
+        </section>
+    </section>
+
+    <img src="images/dark-mode.png">
+
+    <section class="converter">
+        <div class="header" id="flow-header">Vazão</div>
+        <input type="number" class="input" id="flow-input">
+        <div class="units" id="flow-units">
+            <div>lps</div>
+            <div>lpm</div>
+            <div>lph</div>
+            <div style="background-color: #d38900;">mms</div>
+            <div>ccs</div>
+            <div>ccm</div>
+            <div>cch</div>
+        </div>
+
+        <section class="output" id="flow-output">
+            <div>lps</div>
+            <div>lpm</div>
+            <div>lph</div>
+            <div>mms</div>
+            <div>ccs</div>
+            <div>ccm</div>
+            <div>cch</div>
+        </section>
+    </section>
+</body>
+</html>
