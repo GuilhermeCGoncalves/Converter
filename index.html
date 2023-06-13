@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <section class="converter">
+        <div class="header" id="pressure-header">Pressão</div>
+        <input type="number" class="input" id="pressure-input" oninput="pressureConverter()">
+        <div class="units" id="pressure-units">
+            <div id="mBar" onclick="changePressureUnit(id)">mBar</div>
+            <div id ="Bar" onclick="changePressureUnit(id)">Bar</div>
+            <div id="Pa" onclick="changePressureUnit(id)">Pa</div>
+            <div style="background-color:#001f4d;" id="kPa" onclick="changePressureUnit(id)">kPa</div>
+            <div id="MPa" onclick="changePressureUnit(id)">MPa</div>
+            <div id="psi" onclick="changePressureUnit(id)">psi</div>
+            <div id="torr" onclick="changePressureUnit(id)">torr</div>
+        </div>
+       
+        <section class="output" id="pressure-output">
+            <div id="output-mBar" onclick="copyValue(id)">mBar</div>
+            <div id="output-Bar" onclick="copyValue(id)">Bar</div>
+            <div id="output-Pa" onclick="copyValue(id)">Pa</div>
+            <div id="output-kPa" onclick="copyValue(id)">kPa</div>
+            <div id="output-MPa" onclick="copyValue(id)">MPa</div>
+            <div id="output-psi" onclick="copyValue(id)">psi</div>
+            <div id="output-torr" onclick="copyValue(id)">torr</div>
+        </section>
+    </section>
+
+    <div id="theme">
+        <!-- <img src="images/dark-mode.png" id="dark" onclick="darkTheme()">
+        <img src="images/light-mode.png" id="light" onclick="lightTheme()" hidden> -->
+    </div>
+    <section class="converter">
+        <div class="header" id="flow-header">Vazão</div>
+        <input type="number" class="input" id="flow-input" oninput="flowConverter()">
+        <div class="units" id="flow-units">
+            <div id="lps" onclick="changeFlowUnit(id)">lps</div>
+            <div id="lpm" onclick="changeFlowUnit(id)">lpm</div>
+            <div id="lph" onclick="changeFlowUnit(id)">lph</div>
+            <div style="background-color: #d38900;"  id="mms" onclick="changeFlowUnit(id)">mms</div>
+            <div id="ccs" onclick="changeFlowUnit(id)">ccs</div>
+            <div id="ccm" onclick="changeFlowUnit(id)">ccm</div>
+            <div id="cch" onclick="changeFlowUnit(id)">cch</div>
+        </div>
+
+        <section class="output" id="flow-output">
+            <div id="output-lps" onclick="copyValue(id)">lps</div>
+            <div id="output-lpm" onclick="copyValue(id)">lpm</div>
+            <div id="output-lph" onclick="copyValue(id)">lph</div>
+            <div id="output-mms" onclick="copyValue(id)">mms</div>
+            <div id="output-ccs" onclick="copyValue(id)">ccs</div>
+            <div id="output-ccm" onclick="copyValue(id)">ccm</div>
+            <div id="output-cch" onclick="copyValue(id)">cch</div>
+        </section>
+    </section>
+</body>
+</html>

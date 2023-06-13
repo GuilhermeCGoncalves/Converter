@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+:root {
+    --pressure-color:  #001f4d;
+    --pressure-color-hover: #004e72;
+    --flow-color: #d38900;
+    --flow-color-hover: #d1ce00;
+    --units-disabled: #bbafaf;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 5px;
+    font-family: "Arial";
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 5px;
+}
+
+.header {
+    align-items: center;
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.input {
+    text-align: center;
+    font-family: "Squada One";
+    height: 100px;
+    width: 99.5%;
+    font-size: 80pt;
+    outline: none;
+}
+
+.units {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.units > div:hover {
+    cursor: pointer;
+}
+
+.output {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 36pt;
+    font-family: "Squada One";
+    margin-top: 5px;
+}
+
+.output > div:hover {
+    cursor: pointer;
+}
+
+#pressure-header {    
+    width: 99%;
+    background-color: var(--pressure-color);
+}
+
+#pressure-input {
+    color: var(--pressure-color);
+    caret-color: var(--pressure-color);
+    border: 4px solid var(--pressure-color);
+}
+
+#pressure-units > div {
+    background-color: var(--units-disabled);
+    padding: 10px;
+}    
+
+#pressure-units > div:hover {
+    background-color: var(--pressure-color);
+}
+
+#pressure-output > div {
+    background-color: var(--pressure-color);
+    height: 60px;
+    margin-top: 5px;
+}
+
+#pressure-output > div:hover {
+    background-color: var(--pressure-color-hover);
+}
+
+img {
+    height: 40px;
+    margin-top: 5px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+#flow-header {
+    width: 99%;
+    background-color: var(--flow-color);
+}
+
+#flow-input {
+    color: var(--flow-color);
+    caret-color: var(--flow-color);
+    border: 4px solid var(--flow-color);
+}
+
+#flow-units > div {
+    background-color: var(--units-disabled);
+    padding: 10px;
+} 
+
+#flow-units > div:hover {
+    background-color: var(--flow-color);
+}
+
+#flow-output > div {
+    background-color: var(--flow-color);
+    height: 60px;
+    margin-top: 5px;
+}
+
+#flow-output > div:hover {
+    background-color: var(--flow-color-hover);
+}
+
+#kPa {
+    background-color: red;
+}
